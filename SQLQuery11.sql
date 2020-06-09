@@ -1,0 +1,13 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE GetAll
+AS
+BEGIN
+	SELECT S.Id_users, 
+	   S.Id_awards
+		FROM dbo.Users_Awards S
+END
+GO
+
